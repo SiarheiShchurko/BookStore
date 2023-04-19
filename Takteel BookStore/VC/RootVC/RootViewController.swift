@@ -38,7 +38,7 @@ final class RootViewController: UIViewController {
         // 3
         title = "Books Library"
         // 4
-        viewModel.updateUIDelegate = self
+        viewModel.updateDelegate = self
         // 5
         viewModel.receiveBooksList()
     }
@@ -46,9 +46,13 @@ final class RootViewController: UIViewController {
 // MARK: - Open Detail Info VC
 private extension RootViewController {
     func openDetailBookInfoVC(bookProfile: Works) {
+        // 1
        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        // 2
         guard let nextVC = storyboard.instantiateViewController(withIdentifier: "\(DetailBookInfoVC.self)") as? DetailBookInfoVC else { return }
+        // 3
        nextVC.bookProfile = bookProfile
+        // 4
        navigationController?.pushViewController(nextVC, animated: true)
     }
 }
@@ -86,9 +90,11 @@ private extension RootViewController {
 }
 // MARK: - Reload TableView
 extension RootViewController: ReloadUIProtocol {
-    func reloadUI(rating: Double?, dataImage: Data?) {
+    
+    func reloadTableView() {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
     }
 }
+

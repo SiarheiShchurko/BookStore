@@ -13,8 +13,7 @@ final class BookCell: UITableViewCell {
         super.init(style: .default,
                    reuseIdentifier: BookCell.reusedId)
         
-            
-            viewModel.updateUIDelegate = self
+            viewModel.updateDelegate = self
             
             addSubview(coverImage)
             addSubview(bookName)
@@ -82,8 +81,9 @@ extension BookCell {
     }
 
 extension BookCell: ReloadUIProtocol {
-    func reloadUI(rating: Double?, dataImage: Data?) {
-        if let data = dataImage {
+    
+    func reloadTableViewImage(tableViewImage: Data?) {
+        if let data = tableViewImage {
             DispatchQueue.main.async {
                 self.coverImage.image = UIImage(data: data)
             }

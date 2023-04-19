@@ -2,15 +2,15 @@
 import Foundation
 
 final class RootViewModel: RootViewModelProtocol {
-
+    
     var networkService: NetworkServiceProtocol
 
     var booksArray: [Works] = [] {
        didSet {
-           updateUIDelegate?.reloadUI(rating: nil, dataImage: nil)
+           updateDelegate?.reloadTableView!()
        }
    }
-    weak var updateUIDelegate: ReloadUIProtocol?
+    weak var updateDelegate: ReloadUIProtocol?
     
     init(networkService: NetworkServiceProtocol) {
         self.networkService = networkService
@@ -28,7 +28,7 @@ final class RootViewModel: RootViewModelProtocol {
             }
         }
     }
-    func receiveCoverData(id: Int, sizeCover: SizeCovers) { networkService.getCoverData(id: id, coverSize: sizeCover) { [  weak self ] coverDataResult in
+    func receiveCoverData(id: Int, sizeCover: SizeCovers) { networkService.getCoverData(id: id, coverSize: sizeCover) { [ weak self ] coverDataResult in
         // 1
         guard let self else {
             return
@@ -36,7 +36,7 @@ final class RootViewModel: RootViewModelProtocol {
         // 2
             switch coverDataResult {
             case .successData(let data):
-                self.updateUIDelegate?.reloadUI(rating: Double(), dataImage: data)
+                self.updateDelegate?.reloadTableViewImage?(tableViewImage: data)
             default: break
             }
         }

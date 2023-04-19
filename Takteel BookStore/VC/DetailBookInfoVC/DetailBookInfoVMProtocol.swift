@@ -1,6 +1,6 @@
 
 import Foundation
 
-protocol DetailBookInfoVMProtocol: AnyObject {
-    var networkService: NetworkServiceProtocol { get }
+protocol DetailBookInfoVMProtocol: ViewModelProtocol {
+    func receiveBookRating(openLibraryWork: String) 
 }

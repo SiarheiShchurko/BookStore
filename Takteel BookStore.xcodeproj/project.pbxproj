@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED6F937329EE872000A2C26C /* RatingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6F937229EE872000A2C26C /* RatingModel.swift */; };
+		ED6F937529EE8B1400A2C26C /* DetailBookInfoVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6F937429EE8B1400A2C26C /* DetailBookInfoVMProtocol.swift */; };
+		ED6F937829EED80900A2C26C /* SizeCovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6F937729EED80900A2C26C /* SizeCovers.swift */; };
+		ED6F937D29EEF63E00A2C26C /* DetailBookInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6F937C29EEF63E00A2C26C /* DetailBookInfoVM.swift */; };
+		ED7BA36129E9392B007C6EA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BA36029E9392B007C6EA3 /* AppDelegate.swift */; };
+		ED7BA36329E9392B007C6EA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BA36229E9392B007C6EA3 /* SceneDelegate.swift */; };
+		ED7BA36529E9392B007C6EA3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BA36429E9392B007C6EA3 /* RootViewController.swift */; };
+		ED7BA36829E9392B007C6EA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED7BA36629E9392B007C6EA3 /* Main.storyboard */; };
+		ED7BA36A29E9392D007C6EA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED7BA36929E9392D007C6EA3 /* Assets.xcassets */; };
+		ED7BA36D29E9392D007C6EA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED7BA36B29E9392D007C6EA3 /* LaunchScreen.storyboard */; };
+		ED7BA37829E93D4B007C6EA3 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BA37729E93D4B007C6EA3 /* BookCell.swift */; };
+		ED7BA37B29E94BAD007C6EA3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BA37A29E94BAD007C6EA3 /* NetworkService.swift */; };
+		ED7BA37D29E94C73007C6EA3 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BA37C29E94C73007C6EA3 /* NetworkServiceProtocol.swift */; };
+		ED7BA38129E95467007C6EA3 /* BookListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7BA38029E95467007C6EA3 /* BookListModel.swift */; };
+		ED7EA32729ED46F50095735D /* DetailBookInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7EA32629ED46F50095735D /* DetailBookInfoVC.swift */; };
+		ED898DBB29EFF97D009A5426 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED898DBA29EFF97D009A5426 /* ViewModelProtocol.swift */; };
+		EDAEE42E29EB2BD600C46EFC /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEE42D29EB2BD600C46EFC /* RootViewModel.swift */; };
+		EDAEE43029EB2BEC00C46EFC /* RootViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEE42F29EB2BEC00C46EFC /* RootViewModelProtocol.swift */; };
+		EDAEE43229EB34B000C46EFC /* ReloadUIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEE43129EB34B000C46EFC /* ReloadUIProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED6F937229EE872000A2C26C /* RatingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingModel.swift; sourceTree = "<group>"; };
+		ED6F937429EE8B1400A2C26C /* DetailBookInfoVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookInfoVMProtocol.swift; sourceTree = "<group>"; };
+		ED6F937729EED80900A2C26C /* SizeCovers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCovers.swift; sourceTree = "<group>"; };
+		ED6F937C29EEF63E00A2C26C /* DetailBookInfoVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailBookInfoVM.swift; sourceTree = "<group>"; };
+		ED7BA35D29E9392B007C6EA3 /* Takteel BookStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Takteel BookStore.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED7BA36029E9392B007C6EA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED7BA36229E9392B007C6EA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ED7BA36429E9392B007C6EA3 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		ED7BA36729E9392B007C6EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED7BA36929E9392D007C6EA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED7BA36C29E9392D007C6EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED7BA36E29E9392D007C6EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED7BA37729E93D4B007C6EA3 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		ED7BA37A29E94BAD007C6EA3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		ED7BA37C29E94C73007C6EA3 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		ED7BA38029E95467007C6EA3 /* BookListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListModel.swift; sourceTree = "<group>"; };
+		ED7EA32629ED46F50095735D /* DetailBookInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookInfoVC.swift; sourceTree = "<group>"; };
+		ED898DBA29EFF97D009A5426 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		EDAEE42D29EB2BD600C46EFC /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		EDAEE42F29EB2BEC00C46EFC /* RootViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelProtocol.swift; sourceTree = "<group>"; };
+		EDAEE43129EB34B000C46EFC /* ReloadUIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadUIProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED7BA35A29E9392B007C6EA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED6F937629EED7FC00A2C26C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				ED6F937729EED80900A2C26C /* SizeCovers.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		ED7BA35429E9392B007C6EA3 = {
+			isa = PBXGroup;
+			children = (
+				ED7BA35F29E9392B007C6EA3 /* Takteel BookStore */,
+				ED7BA35E29E9392B007C6EA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED7BA35E29E9392B007C6EA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED7BA35D29E9392B007C6EA3 /* Takteel BookStore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED7BA35F29E9392B007C6EA3 /* Takteel BookStore */ = {
+			isa = PBXGroup;
+			children = (
+				ED898DB929EFF968009A5426 /* Protocols */,
+				ED6F937629EED7FC00A2C26C /* Enums */,
+				ED7BA37E29E95443007C6EA3 /* Models */,
+				ED7BA37929E94B97007C6EA3 /* Services */,
+				ED7BA37429E939A0007C6EA3 /* VC */,
+				ED7BA36029E9392B007C6EA3 /* AppDelegate.swift */,
+				ED7BA36229E9392B007C6EA3 /* SceneDelegate.swift */,
+				ED7BA36629E9392B007C6EA3 /* Main.storyboard */,
+				ED7BA36929E9392D007C6EA3 /* Assets.xcassets */,
+				ED7BA36B29E9392D007C6EA3 /* LaunchScreen.storyboard */,
+				ED7BA36E29E9392D007C6EA3 /* Info.plist */,
+			);
+			path = "Takteel BookStore";
+			sourceTree = "<group>";
+		};
+		ED7BA37429E939A0007C6EA3 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				ED7EA32529ED46D20095735D /* DetailBookInfoVC */,
+				ED7BA37529E939AE007C6EA3 /* RootVC */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		ED7BA37529E939AE007C6EA3 /* RootVC */ = {
+			isa = PBXGroup;
+			children = (
+				ED7BA37629E93D07007C6EA3 /* TableViewCell */,
+				ED7BA36429E9392B007C6EA3 /* RootViewController.swift */,
+				EDAEE42D29EB2BD600C46EFC /* RootViewModel.swift */,
+				EDAEE42F29EB2BEC00C46EFC /* RootViewModelProtocol.swift */,
+			);
+			path = RootVC;
+			sourceTree = "<group>";
+		};
+		ED7BA37629E93D07007C6EA3 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				ED7BA37729E93D4B007C6EA3 /* BookCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		ED7BA37929E94B97007C6EA3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED7BA37A29E94BAD007C6EA3 /* NetworkService.swift */,
+				ED7BA37C29E94C73007C6EA3 /* NetworkServiceProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ED7BA37E29E95443007C6EA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED7BA37F29E9544D007C6EA3 /* NetworkModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED7BA37F29E9544D007C6EA3 /* NetworkModels */ = {
+			isa = PBXGroup;
+			children = (
+				ED7BA38029E95467007C6EA3 /* BookListModel.swift */,
+				ED6F937229EE872000A2C26C /* RatingModel.swift */,
+			);
+			path = NetworkModels;
+			sourceTree = "<group>";
+		};
+		ED7EA32529ED46D20095735D /* DetailBookInfoVC */ = {
+			isa = PBXGroup;
+			children = (
+				ED7EA32629ED46F50095735D /* DetailBookInfoVC.swift */,
+				ED6F937C29EEF63E00A2C26C /* DetailBookInfoVM.swift */,
+				ED6F937429EE8B1400A2C26C /* DetailBookInfoVMProtocol.swift */,
+			);
+			path = DetailBookInfoVC;
+			sourceTree = "<group>";
+		};
+		ED898DB929EFF968009A5426 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				ED898DBA29EFF97D009A5426 /* ViewModelProtocol.swift */,
+				EDAEE43129EB34B000C46EFC /* ReloadUIProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED7BA35C29E9392B007C6EA3 /* Takteel BookStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED7BA37129E9392D007C6EA3 /* Build configuration list for PBXNativeTarget "Takteel BookStore" */;
+			buildPhases = (
+				ED7BA35929E9392B007C6EA3 /* Sources */,
+				ED7BA35A29E9392B007C6EA3 /* Frameworks */,
+				ED7BA35B29E9392B007C6EA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Takteel BookStore";
+			productName = "Takteel BookStore";
+			productReference = ED7BA35D29E9392B007C6EA3 /* Takteel BookStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED7BA35529E9392B007C6EA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					ED7BA35C29E9392B007C6EA3 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = ED7BA35829E9392B007C6EA3 /* Build configuration list for PBXProject "Takteel BookStore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED7BA35429E9392B007C6EA3;
+			productRefGroup = ED7BA35E29E9392B007C6EA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED7BA35C29E9392B007C6EA3 /* Takteel BookStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED7BA35B29E9392B007C6EA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED7BA36D29E9392D007C6EA3 /* LaunchScreen.storyboard in Resources */,
+				ED7BA36A29E9392D007C6EA3 /* Assets.xcassets in Resources */,
+				ED7BA36829E9392B007C6EA3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED7BA35929E9392B007C6EA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED7EA32729ED46F50095735D /* DetailBookInfoVC.swift in Sources */,
+				ED7BA37B29E94BAD007C6EA3 /* NetworkService.swift in Sources */,
+				ED6F937329EE872000A2C26C /* RatingModel.swift in Sources */,
+				ED7BA37829E93D4B007C6EA3 /* BookCell.swift in Sources */,
+				ED7BA37D29E94C73007C6EA3 /* NetworkServiceProtocol.swift in Sources */,
+				ED6F937D29EEF63E00A2C26C /* DetailBookInfoVM.swift in Sources */,
+				EDAEE43029EB2BEC00C46EFC /* RootViewModelProtocol.swift in Sources */,
+				ED7BA38129E95467007C6EA3 /* BookListModel.swift in Sources */,
+				ED7BA36529E9392B007C6EA3 /* RootViewController.swift in Sources */,
+				EDAEE43229EB34B000C46EFC /* ReloadUIProtocol.swift in Sources */,
+				ED7BA36129E9392B007C6EA3 /* AppDelegate.swift in Sources */,
+				ED6F937529EE8B1400A2C26C /* DetailBookInfoVMProtocol.swift in Sources */,
+				EDAEE42E29EB2BD600C46EFC /* RootViewModel.swift in Sources */,
+				ED6F937829EED80900A2C26C /* SizeCovers.swift in Sources */,
+				ED7BA36329E9392B007C6EA3 /* SceneDelegate.swift in Sources */,
+				ED898DBB29EFF97D009A5426 /* ViewModelProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED7BA36629E9392B007C6EA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED7BA36729E9392B007C6EA3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED7BA36B29E9392D007C6EA3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED7BA36C29E9392D007C6EA3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED7BA36F29E9392D007C6EA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED7BA37029E9392D007C6EA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED7BA37229E9392D007C6EA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6VXX7R3JL6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Takteel BookStore/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "by.siarhei.shchurko.Takteel-BookStore";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED7BA37329E9392D007C6EA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6VXX7R3JL6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Takteel BookStore/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "by.siarhei.shchurko.Takteel-BookStore";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED7BA35829E9392B007C6EA3 /* Build configuration list for PBXProject "Takteel BookStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7BA36F29E9392D007C6EA3 /* Debug */,
+				ED7BA37029E9392D007C6EA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED7BA37129E9392D007C6EA3 /* Build configuration list for PBXNativeTarget "Takteel BookStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7BA37229E9392D007C6EA3 /* Debug */,
+				ED7BA37329E9392D007C6EA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED7BA35529E9392B007C6EA3 /* Project object */;
+}

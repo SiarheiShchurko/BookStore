@@ -53,6 +53,7 @@ final class DetailBookInfoVC: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 16, weight: .heavy)
+        label.text = "Rating: "
         label.numberOfLines = 0
         return label
     }()
@@ -76,6 +77,8 @@ final class DetailBookInfoVC: UIViewController {
         loadData()
         // 3
         constraints()
+        // 4
+        viewModel.updateDelegate = self
     }
 }
 // MARK: - Custom methods
@@ -92,53 +95,26 @@ private extension DetailBookInfoVC {
        
     }
     func loadData() {
+        
         // TitlePage
         titlePage.text = bookProfile?.title
         if bookProfile?.firstPublishYear != nil {
             firstYearPublished.text = "First published year: \(bookProfile!.firstPublishYear)"
         }
+        
         // Description
         if bookProfile?.subject != nil {
             bookDescription.text = bookProfile!.subject.joined(separator: " ")
         }
+        
         // Cover
-        viewModel.networkService.getCoverData(id: bookProfile?.coverID ?? 0, coverSize: .L) { [ weak self ] (result) in
-            guard let self else {
-                return
-            }
-            switch result {
-            case .successData(let data):
-                DispatchQueue.main.async {
-                    self.coverImageView.image = UIImage(data: data)
-                    self.loadIndicator.stopAnimating()
-                    self.loadIndicator.isHidden = true
-                }
-            case .error(error:):
-                DispatchQueue.main.async {
-                    self.coverImageView.image = UIImage(systemName: "Book.fill")
-                    self.loadIndicator.stopAnimating()
-                    self.loadIndicator.isHidden = true
-                }
-            default: break
-            }
-        }
+        viewModel.receiveCoverData(id: bookProfile?.coverID ?? 0, sizeCover: SizeCovers.L)
+        
         // Load rating
-        viewModel.networkService.getBookRating(openLibraryWork: bookProfile?.availability.openLibraryWork ?? String()) { [ weak self ] (result) in
-            guard let self else {
-                return
-            }
-            switch result {
-            case .successBookRating(let rating):
-                DispatchQueue.main.async {
-                    self.bookRating.text = "Rating: \(round(rating.summary.average * 100) / 100 )"
-                }
-            default: DispatchQueue.main.async {
-                self.bookRating.text = "Rating: -"
-            }
-            }
+        viewModel.receiveBookRating(openLibraryWork: bookProfile?.availability.openLibraryWork ?? String())
         }
     }
-}
+
 // MARK: - Constraints
 private extension DetailBookInfoVC {
     func constraints() {
@@ -179,6 +155,28 @@ private extension DetailBookInfoVC {
             bookDescription.trailingAnchor.constraint(equalTo: coverImageView.trailingAnchor),
             bookDescription.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
+    }
+}
+
+extension DetailBookInfoVC: ReloadUIProtocol {
+    
+    func reloadImage(dataImage: Data?) {
+        if let data = dataImage {
+            DispatchQueue.main.async {
+                self.coverImageView.image = UIImage(data: data)
+                self.loadIndicator.stopAnimating()
+                self.loadIndicator.isHidden = true
+            }
+        }
+    }
+    func reloadText(data: Double) {
+        DispatchQueue.main.async {
+            if data == 0 {
+                self.bookRating.text = "Rating: None"
+            } else {
+            self.bookRating.text = "Rating: \(round(data * 100) / 100 )"
+            }
+        }
     }
 }
 
